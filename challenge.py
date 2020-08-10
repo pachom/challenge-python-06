@@ -2,8 +2,10 @@ def make_division_by(n):
     """This closure returns a function that returns the division
        of an x number by n 
     """
-    # You have to code here!
-    pass
+    def division(x):
+        assert n != 0, 'Division by 0 is not valid'
+        return x / n
+    return division
 
 
 def run():
